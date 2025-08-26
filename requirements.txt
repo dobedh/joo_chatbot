@@ -1,0 +1,35 @@
+# Core dependencies
+streamlit==1.46.1
+python-dotenv==1.1.1
+
+# LLM and AI
+google-generativeai==0.8.5
+langchain==0.3.27
+langchain-community==0.3.27
+langchain-core==0.3.74
+langchain-google-genai==2.1.9
+langchain-text-splitters==0.3.9
+
+# Vector Database
+chromadb==1.0.20
+
+# Korean NLP & Embeddings
+sentence-transformers==5.1.0
+transformers==4.55.4
+torch
+
+# Search
+rank-bm25==0.2.2
+
+# Data processing
+numpy==2.3.1
+pandas==2.3.0
+
+# PDF processing (optional - not used in current app)
+# pypdf
+# pdfplumber
+
+# Additional Google dependencies
+google-api-core==2.25.1
+google-auth==2.40.3
+googleapis-common-protos==1.70.0
