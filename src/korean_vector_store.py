@@ -5,6 +5,15 @@ ko-sroberta-multitask 모델을 사용한 한국어 임베딩 최적화
 """
 
 from typing import List, Dict, Optional
+
+# SQLite 버전 패치 for Streamlit Cloud
+try:
+    __import__('pysqlite3')
+    import sys
+    sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
+except ImportError:
+    pass  # Local environment doesn't need this patch
+
 import chromadb
 from chromadb.config import Settings
 from langchain.schema import Document
